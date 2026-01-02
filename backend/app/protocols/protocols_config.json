@@ -1,0 +1,18 @@
+{
+  "xiaodash": {
+    "1.0": {
+      "firmware_uuid": "0000xxxx-0000-1000-8000-00805f9b34fb",
+      "speed_offset": 512
+    },
+    "1.1": {
+      "firmware_uuid": "0000yyyy-0000-1000-8000-00805f9b34fb",
+      "speed_offset": 520
+    }
+  },
+  "ninebot": {
+    "2.0": {
+      "firmware_uuid": "0000zzzz-0000-1000-8000-00805f9b34fb",
+      "speed_offset": 500
+    }
+  }
+}

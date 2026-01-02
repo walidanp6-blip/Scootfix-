@@ -1,0 +1,45 @@
+frontend/
+ ├── public/
+ │    └── index.html
+ ├── src/
+ │    ├── api/
+ │    │    ├── apiClient.ts
+ │    │    ├── authApi.ts
+ │    │    └── scooterApi.ts
+ │    ├── components/
+ │    │    ├── Auth/
+ │    │    │    ├── Login.tsx
+ │    │    │    └── Register.tsx
+ │    │    ├── Scooter/
+ │    │    │    ├── ConnectDevice.tsx
+ │    │    │    ├── FirmwareViewer.tsx
+ │    │    │    └── SpeedHacker.tsx
+ │    │    ├── UI/
+ │    │    │    ├── Header.tsx
+ │    │    │    └── Loader.tsx
+ │    ├── hooks/
+ │    │    └── useAuth.ts
+ │    ├── App.tsx
+ │    ├── index.tsx
+ │    └── routes.tsx
+ ├── package.json
+ ├── tsconfig.json
+ └── README.md
+backend/
+ ├── app/
+ │    ├── api/
+ │    │    └── endpoints.py          # جميع نقاط الـ API هنا
+ │    ├── core/
+ │    │    ├── config.py             # إعدادات المشروع
+ │    │    └── security.py           # التوثيق (JWT)
+ │    ├── models/
+ │    │    ├── user.py               # موديل المستخدم
+ │    │    ├── scooter.py            # موديلات السكوتر
+ │    │    └── firmware.py           # موديل الفيرموير (اختياري)
+ │    ├── protocols/
+ │    │    ├── base_protocol.py      # بروتوكول أساسي للتعامل مع البلوتوث
+ │    │    ├── protocol_factory.py   # مصنع البروتوكولات الديناميكية
+ │    │    └── protocols_config.json # ملف إعدادات البروتوكولات (UUIDs ..)
+ │    └── main.py                   # نقطة البداية لتشغيل FastAPI
+ ├── requirements.txt               # المكتبات المطلوبة
+ └── README.md                     # شرح المشروع وتشغيله
